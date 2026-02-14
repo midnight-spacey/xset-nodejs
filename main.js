@@ -2,7 +2,7 @@
 if you are gonna skid this please credit me! - frogiee1
 */
 
-let titleText = "frogiee.onee";
+let titleText = "midnight spacey";
 let opacity = 0;
 let fadeIn = true;
 let delay = 0.003;
