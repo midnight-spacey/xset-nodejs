@@ -1,29 +1,51 @@
+/* =========================
+   QUICKSAND FONT SETUP
+========================= */
 @font-face {
-    font-family: 'Quicksand Bold';
-    src: url('/stuff/fonts/Quicksand/static/Quicksand-Bold.ttf');
-  }
-  
-  @font-face {
-    font-family: 'Quicksand SemiBold';
-    src: url('/stuff/fonts/Quicksand/static/Quicksand-SemiBold.ttf');
-  }
-  
-  @font-face {
-    font-family: 'Quicksand Medium';
-    src: url('/stuff/fonts/Quicksand/static/Quicksand-Medium.ttf');
-  }
+  font-family: 'Quicksand';
+  src: url('/stuff/fonts/Quicksand/static/Quicksand-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
 
-body{
-    font-family: "Quicksand Medium", serif;
-    margin: 0;
-    height: 100vh;
-    color: rgba(0, 0, 0, 0);
-    overflow: hidden;
-    user-select: none
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/stuff/fonts/Quicksand/static/Quicksand-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
 }
-h1{
-  font-family: 'Quicksand Bold';
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/stuff/fonts/Quicksand/static/Quicksand-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
 }
+
+/* =========================
+   GLOBAL
+========================= */
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  margin: 0;
+  height: 100vh;
+  color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  user-select: none;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+h4, h5 {
+  font-weight: 600;
+}
+
+/* =========================
+   LINKS
+========================= */
 a {
   color: #426fb8;
   transition: ease 0.2s;
@@ -33,404 +55,177 @@ a {
 
 a:hover {
   color: #31ff6f;
-  transition: ease 0.2s;
 }
-button{
-    background-color: #1a1a1a00;
-    height: 50px;
-    outline: none;
-    border: solid 2px #3b3b3b;
-    color: white;
-    font-family: "Quicksand Medium", sans-serif;
-    font-size: 1.2em;
-    border-radius: 15px;
-    transition: all ease-in-out .15s;
-    cursor: pointer;
-    margin: 10px;
-    font-size: 1.2em;
-  }
-  button:hover{
-    background-color: #2a996e;
-    border: solid 2px #00ff9d;
-    box-shadow: 0 0 10px #00ff9d, 0 0 20px #00ff9d, 0 0 30px #00ff9d;
-  }
-  button:active{
-    scale: 0.8;
-  }
-  button:disabled{
-    cursor: url(/stuff/icons/pointer.png), pointer!important;
-    background-color: #0e0e0e;
-    border: solid 5px #292929;
-    scale: 1;
-    box-shadow: 0 0 0px #000;
-  }
+
 #back {
   position: absolute;
   top: 0;
-  color: #426fb8;
-  transition: ease 0.2s;
-  text-underline-offset: 10000px;
   font-weight: 700;
-}
-#back:hover {
-  color: #31ff6f;
-  transition: ease 0.2s;
   cursor: pointer;
 }
-#vanta {
-  transition: all ease-out 0.4s;
-  background-color: #000;
-  width: 100vw; height: 100vh;
+
+/* =========================
+   BUTTONS
+========================= */
+button {
+  background-color: #1a1a1a00;
+  height: 50px;
+  border: solid 2px #3b3b3b;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  border-radius: 15px;
+  transition: all ease-in-out .15s;
+  cursor: pointer;
+  margin: 10px;
 }
-#roddyricchesbox{
-    transition: all ease-in-out 1.5s;
-    position: absolute;
-    z-index: 9997;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -55%);
-    width: 600px;
-    height: 600px;
-    border-radius: 35px;
-    color: white;
-    padding: 30px;
-    line-height: 1.8;
-    overflow: clip;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    background-color: #1a1a1a6e;
-    backdrop-filter: blur(20px);
+
+button:hover {
+  background-color: #2a996e;
+  border: solid 2px #00ff9d;
+  box-shadow: 0 0 10px #00ff9d, 0 0 20px #00ff9d;
 }
-#topleft{
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 50%;
-  text-align: center;
-  padding: 0;
-  position: fixed;
+
+button:active {
+  scale: 0.8;
 }
-#topright{
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 50%;
-  text-align: center;
-  padding: 0;
-  position: fixed;
+
+button:disabled {
+  cursor: pointer;
+  background-color: #0e0e0e;
+  border: solid 5px #292929;
+  box-shadow: none;
 }
-#topright h3 {
-  margin: 0, 0;
-}
-#bottomleft{
-  bottom: 0;
-  left: 0;
-  width: 50%;
-  height: 50%;
-  text-align: center;
-  padding: 0;
-  position: fixed;
-}
-#bottomright{
-  bottom: 0;
-  right: 0;
-  width: 50%;
-  height: 50%;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  position: fixed;
-}
-#thethingabovethemusicbar {
+
+/* =========================
+   MAIN CARD
+========================= */
+#roddyricchesbox {
   transition: all ease-in-out 1.5s;
   position: absolute;
-  bottom: 68px;
+  z-index: 9997;
+  text-align: center;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -55%);
-  width: 40px;
-  height: 20px;
+  width: 600px;
+  height: 600px;
+  border-radius: 35px;
+  color: white;
+  padding: 30px;
+  line-height: 1.8;
   background-color: #1a1a1a6e;
   backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
-  z-index: 9998;
-  display: flex;
-  align-items: center;
-  text-align: c;
-  padding: 0;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  cursor: pointer;
 }
+
+/* =========================
+   SECTIONS
+========================= */
+#topleft, #topright, #bottomleft, #bottomright {
+  width: 50%;
+  height: 50%;
+  position: fixed;
+  text-align: center;
+}
+
+#topleft { top: 0; left: 0; }
+#topright { top: 0; right: 0; }
+#bottomleft { bottom: 0; left: 0; }
+#bottomright { bottom: 0; right: 0; }
+
+/* =========================
+   MUSIC BAR
+========================= */
 #musicbar {
-  transition: all ease-in-out 1.5s;
   position: absolute;
   bottom: 0;
-  left: 0;
   width: 100%;
   height: 80px;
   background-color: #1a1a1a6e;
   backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
-  z-index: 9998;
-  display: flex;
-  align-items: center;
-  padding: 0;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
+  display: flex;
+  align-items: center;
+  z-index: 9998;
 }
-#progress-container {
-  position: fixed;
-  width: 50%;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  right: 20px;
-  height: 6px;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 2px;
-  overflow: hidden;
-  cursor: pointer;
-}
-#progress-bar {
-  height: 100%;
-  width: 0%;
-  background: #ffffff;
-  border-radius: 2px;
-}
+
 .controls {
   margin: 0 auto;
   display: flex;
   gap: 24px;
-  align-items: center;
 }
+
 .controls button {
   border: none;
+  background: none;
   color: white;
-  background-color: #1a1a1a00;
   font-size: 20px;
-  cursor: pointer;
-  opacity: 0.85;
 }
-.controls button:hover {
-  opacity: 1;
-  background-color: #2a996e00;
-  border: solid 0px #00ff9d;
-  box-shadow: 0 0 0px #00ff9d, 0 0 0px #00ff9d, 0 0 0px #00ff9d;
-}
+
 .controls .play {
   font-size: 26px;
 }
-#musicmenu{
-    transition: all ease-in-out .9s;
-    position: absolute;
-    z-index: 9997;
-    text-align: center;
-    top: 150%;
-    left: 50%;
-    transform: translate(-50%, -55%);
-    width: 400px;
-    height: 560px;
-    border-radius: 35px;
-    color: white;
-    padding: 30px;
-    line-height: 1.8;
-    overflow: clip;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    background-color: #1a1a1a6e;
-    backdrop-filter: blur(20px);
-}
-#thetop{
-  width: 400px;
-  height: 100px;
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-#thebottom{
-  width: 400px;
-  height: 530px;
-  position: absolute;
-  top: 57px;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
+
+/* =========================
+   TRACK LIST
+========================= */
 .track {
   display: grid;
   grid-template-columns: 48px 1fr 1fr;
   gap: 14px;
   padding: 10px;
   border-radius: 10px;
-  align-items: center;
   cursor: pointer;
 }
+
 .track:hover {
   background: rgba(255,255,255,0.08);
 }
-.track img {
-  width: 48px;
-  height: 48px;
-  border-radius: 6px;
-}
-.track-info {
-  display: flex;
-  flex-direction: column;
-}
+
 .track-info .title {
   font-weight: 600;
 }
-.track-info .artist {
-  font-size: 15px;
-}
-.album {
-  font-size: 12px;
-  opacity: 0.6;
-}
-.pagestuffs{
-  opacity: 0;
-}
-.info{
-    transition: all ease-in-out 1.5s;
-    position: fixed;
-    z-index: 9997;
-    text-align: center;
-    top: 20%;
-    left: -150%;
-    width: 100%;
-    height: 100%;
-    border-top-left-radius: 35px;
-    border-top-right-radius: 35px;
-    color: white;
-    padding: 0;
-    line-height: 1.8;
-    overflow: clip;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    background-color: #1a1a1a6e;
-    backdrop-filter: blur(20px);
-}
-.butheresthereader{
-    transition: all ease-in-out 1.5s;
-    position: fixed;
-    z-index: 9997;
-    text-align: center;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: white;
-    padding: 0;
-    line-height: 1.8;
-    overflow: scroll;
-    scrollbar-width: none;
-}
-.title{
-    transition: all ease-in-out 1.5s;
-    position: fixed;
-    z-index: 9997;
-    text-align: center;
-    top: 0;
-    left: -150%;
-    width: 100%;
-    height: 20%;
-    color: white;
-    padding: 0;
-    line-height: 1.8;
-    overflow: clip;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-#profile-pic{
-    width: 180px;
-    height: 180px;
-    border-radius: 100%;
-}
-#albumcover{
-    width: 90px;
-    height: 90px;
-    border-radius: 10px;
-}
-.content{
-  top: -70%;
-  transform: translate(0, -55%);
-  position: sticky;
-}
 
-  #lowtaperfade{
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    left: 0;
-    position: fixed;
-    top: 0px;
-    z-index:2;
-    opacity: .7;
-  }
-  #evenbiggerfadethanlowtaperfade{
-    transition: all ease-in-out 1.5s;
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    left: 0;
-    position: fixed;
-    top: 0px;
-    z-index:9999;
-    opacity: 0;
-    pointer-events: none;
-  }
-  .iconlinks{
-    width: 35px;
-    height: 35px;
-    transition: ease .2s;
-  }
-  .iconlinks:hover{
-    cursor: pointer;
-    scale: 1.2;
-  }
-  .enter-popup {
+/* =========================
+   POPUPS / OVERLAYS
+========================= */
+.enter-popup {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(20px);
+  background-color: rgba(0,0,0,.8);
   z-index: 9999;
-  transition: all 0.3s ease;
 }
 
 .enter-button {
-  top: 50%;
-  left: 50%;
   font-size: 24px;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  font-weight: 700;
+  color: white;
 }
 
 .enter-button:hover {
   text-shadow: 0 0 10px #31ff6f;
 }
-#canvas {
-  transition: all ease-in-out .9s;
+
+/* =========================
+   BACKGROUNDS
+========================= */
+#vanta, #canvas {
   position: fixed;
-  left: 0;
-  top: 0;
+  inset: 0;
   width: 100%;
   height: 100%;
-  z-index: 3;
+}
+
+#lowtaperfade {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  opacity: .7;
+  z-index: 2;
 }
