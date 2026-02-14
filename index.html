@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>frogiee.one</title>
+        <link rel="stylesheet" href="/stuff/css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+        <link rel="icon" href="/pfp.png">
+        <meta property="og:title" content="frogiee.one">
+        <meta name="theme-color" content="#02c576">
+        <meta name="msapplication-TileColor" content="#02c576">
+        <meta property="og:image" content="/pfp.png">
+        <meta name="description" content="some could say that frogiee in fact won">
+        <meta property="og:description" content="some could say that frogiee in fact won">
+    </head>
+    <body>
+        <div id="evenbiggerfadethanlowtaperfade"></div>
+        <div id="enter-popup" class="enter-popup" onclick="enter()">
+            <a id="enter-button" class="enter-button">click to enter.</a>
+        </div>
+        <div id="roddyricchesbox">
+            <div id="topleft">
+                <h1>hi, i'm frogiee1.</h1>
+                <img id="profile-pic" src="/pfp.png">
+            </div>
+            <div id="topright">
+                <h1>currently playing</h1>
+                <img id="albumcover" src="/stuff/tracks/temposlashtransfer.png">
+                <h2 id="songtitle">TEMPO</h2>
+                <h5 id="songartist">SUPXR</h5>
+            </div>
+            <div id="bottomleft">
+                <h1>projects</h1>
+                <button onclick="leavethefunctionasfrogiesarcade()">frogie's arcade</button>
+                <button onclick="leavethefunctionasnowggfun()">nowgg.fun</button>
+                <button onclick="leavethefunctionasxenamc()">xenaMC</button>
+            </div>
+            <div id="bottomright">
+                <h1>socials</h1>
+                <a href="https://www.youtube.com/frogiee1" target="_blank">youtube</a>
+                <br>
+                <a href="https://www.tiktok.com/@frogiesarcade" target="_blank">tiktok</a>
+                <br>
+                <a href="https://discord.com/users/863178429213179984/" target="_blank">discord</a>
+                <br>
+                <a href="https://github.com/FrogiesArcade" target="_blank">github</a>
+                <br>
+                <a href="https://steamcommunity.com/id/frogiee1" target="_blank">steam</a>
+                <br>
+                <a href="https://www.instagram.com/frogiee.one/" target="_blank">instagram</a>
+            </div>
+        </div>
+        <div id="thethingabovethemusicbar" onclick="musicmenu()">
+            <img id="toggleicon" src="stuff/icons/up.svg" style="left: 50%; position: absolute; transform: translate(-50%, 0);">
+        </div>
+        <div id="musicmenu" style="top: 150%">
+            <div id="thetop">
+                <h2>select any song from below..</h2>
+            </div>
+            <div id="thebottom">
+                    <div class="track" onclick="switchmusic(0)">
+                        <img src="/stuff/tracks/temposlashtransfer.png" />
+                        <div class="track-info">
+                            <span class="artist">TEMPO</span>
+                        </div>
+                        <div class="album">SUPXR</div>
+                    </div>
+                    <div class="track" onclick="switchmusic(1)">
+                        <img src="/stuff/tracks/shetrynna.png" />
+                        <div class="track-info">
+                            <span class="artist">SHE TRYNNA!</span>
+                        </div>
+                        <div class="album">W4ddles, SaveTheWorld!, Bryansanon</div>
+                    </div>
+                    <div class="track" onclick="switchmusic(2)">
+                        <img src="/stuff/tracks/blameher.png" />
+                        <div class="track-info">
+                            <span class="artist">BLAME HER</span>
+                        </div>
+                        <div class="album">SUPXR, QKReign</div>
+                    </div>
+                    <div class="track" onclick="switchmusic(3)">
+                        <img src="/stuff/tracks/lately.png" />
+                        <div class="track-info">
+                            <span class="artist">LATELY</span>
+                        </div>
+                        <div class="album">SUPXR</div>
+                    </div>
+                    <div class="track" onclick="switchmusic(4)">
+                        <img src="/stuff/tracks/are-these-w-hints-question-mark-question-mark.png" />
+                        <div class="track-info">
+                            <span class="artist">we aint frens no mo lol.</span>
+                        </div>
+                        <div class="album">shteppi</div>
+                    </div>
+                    <div class="track" onclick="switchmusic(5)">
+                        <img src="/stuff/tracks/inmyhead-ok-back-to-normal-tracks-ig.png" />
+                        <div class="track-info">
+                            <span class="artist">IN MY HEAD</span>
+                        </div>
+                        <div class="album">SUPXR</div>
+                    </div>
+                    <div class="track" onclick="switchmusic(6)">
+                        <img src="/stuff/tracks/highwithu.png" />
+                        <div class="track-info">
+                            <span class="artist">high with u!</span>
+                        </div>
+                        <div class="album">BroA$taR, ezzie4em, angst!, prodkaz</div>
+                    </div>
+                    <div class="track" onclick="switchmusic(7)">
+                        <img src="/stuff/tracks/soultie.png" />
+                        <div class="track-info">
+                            <span class="artist">Soul Tie</span>
+                        </div>
+                        <div class="album">jalenrekt, QKReign</div>
+                    </div>
+            </div>
+        </div>
+        <div id="musicbar">
+            <div class="controls">
+                <button onclick="rewind()">⏮</button>
+                <button class="play" onclick="togglePlay()">⏸</button>
+                <button onclick="forward()">⏭</button>
+            </div>
+            <div id="progress-container"><div id="progress-bar"></div></div>
+        </div>
+
+        <div class="pagestuffs">
+            <div class="title">
+                <a id="back" onclick="gobacktothefunctionfromfrogiesarcade()" style="right: 11px;">back ---></a>
+                <h1>frogie's arcade</h1>
+                <button onclick="window.open('https://frogiesarcade.win')">visit site</button>
+                <button onclick="window.open('https://discord.gg/unblockedgames')">discord</button>
+            </div>
+            <div class="info">
+                <div class="butheresthereader">
+                    <h2 id="frogiesarcadeusercount">users online: </h2>
+                    <h4>
+                        frogie's arcade is a hybrid games/proxy site designed to allow normally restricted content to be unblocked at school.
+                        it houses multiple popular apps, 150+ games that include popular games such as roblox, cuphead, hollow knight, and more.
+                        the brand is the main one out of the 3 other services i own, and the 2 other services are under the frogie's arcade brand.
+                        frogie's arcade was at one point the largest unblocked game site on the planet, having 14,000+ concurrent users online at once!
+                    </h4>
+                    <img src="/stuff/pictures/frogiesarcade.png" width="639.6666666666667" height="314.3333333333333" style="border-radius: 13px;">
+                    <h4>
+                        the site has been running for 4+ years, and has gone many major changes.
+                        it also has tons of links that work for EVERY single filter!
+                        and as of right now, frogie's arcade is one of the only good options to choose for a game site to use in school.
+                    </h4>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+            </div>
+        </div>
+        </div>
+        <div class="pagestuffs">
+            <div class="title" style="left: 150%;">
+                <a id="back" onclick="gobacktothefunctionfromnowggfun()" style="left: 11px;">back ---></a>
+                <h1>nowgg.fun</h1>
+                <button onclick="window.open('https://nowgg.fun')">visit site</button>
+                <button onclick="window.open('https://discord.gg/unblockedgames')">discord</button>
+            </div>
+            <div class="info" style="left: 150%;">
+                <div class="butheresthereader">
+                    <h4>
+                        nowgg.fun is the one of a kind now.gg bypass, and is the ONLY one that works.
+                        nowgg.fun allows you to play android games in the cloud like roblox via now.gg, which usually blocks proxies.
+                        on top of that, nowgg.fun blocks all now.gg ads, allows actual fullscreen you wouldn't get on actual now.gg, and more.
+                    </h4>
+                    <img src="/stuff/pictures/nowggfun1.png" width="639.6666666666667" height="314.3333333333333" style="border-radius: 13px;">
+                    <br>
+                    <img src="/stuff/pictures/nowggfun2.png" width="639.6666666666667" height="314.3333333333333" style="border-radius: 13px;">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                
+                </div>
+            </div>
+        </div>
+        <div class="pagestuffs">
+            <div class="title" style="top: 150%; left: 0;">
+                <a id="back" onclick="gobacktothefunctionfromxenamc()" style="left: 0; right: 0;">↑ back ↑</a>
+                <h1>xenaMC</h1>
+                <button onclick="window.open('https://xena.wtf')">visit site</button>
+                <button onclick="window.open('https://discord.gg/eaglercraft')">discord</button>
+            </div>
+            <div class="info" style="top: 150%; left: 0;">
+                <div class="butheresthereader">
+                    <h2 id="xenaplayercount">players online: 100/1000</h2>
+                    <h4>
+                        xenaMC is an eaglercraft server that has 7 gamemodes, and is (probably) the 3rd largest eaglercraft server.
+                        it currently supports minecraft versions 1.7.10 through 1.21.11.
+                        currently the server has the following gamemodes/minigames to choose from: survival, skyblock, oneblock, pit pvp, kit pvp, skywars, and bedwars.
+                    </h4>
+                    <img src="/stuff/pictures/xenamc1.png" width="639.6666666666667" height="314.3333333333333" style="border-radius: 13px;">
+                    <br>
+                    <img src="/stuff/pictures/xenamc2.png" width="639.6666666666667" height="314.3333333333333" style="border-radius: 13px;">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>  
+                </div>
+            </div>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div id="lowtaperfade"></div>
+        <audio id="enter-sound" src="/bg.mp3" loop="" volume=".8"></audio>
+        <div id="vanta" style="position: relative;"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cells.min.js"></script>
+        <script>
+            VANTA.CELLS({
+                el: "#vanta",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                color1: 0x0,
+                color2: 0x9643,
+                speed: 3.30
+            })
+        </script>
+        <script src="/stuff/scripts/pages.js"></script>
+        <script src="/stuff/scripts/main.js"></script>
+    <!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6321ec3b2d3c4a928f3caf9863555bce"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>
