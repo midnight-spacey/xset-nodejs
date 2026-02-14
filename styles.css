@@ -5,12 +5,12 @@
   
   @font-face {
     font-family: 'Quicksand SemiBold';
-    src: url('/stuff/fonts/Quicksand/static/Quicksand-SemiBold.ttf');
+    src: url('Quicksand-SemiBold.ttf');
   }
   
   @font-face {
     font-family: 'Quicksand Medium';
-    src: url('/stuff/fonts/Quicksand/static/Quicksand-Medium.ttf');
+    src: url('Quicksand-Medium.ttf');
   }
 
 body{
