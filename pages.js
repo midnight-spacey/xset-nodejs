@@ -4,11 +4,11 @@ function musicmenu() {
     const arrowthing = document.getElementById('toggleicon')
     if ((musicmenu.style.top) === "150%"){
         musicmenu.style.top = "50%"
-        arrowthing.src = "/stuff/icons/down.svg"
+        arrowthing.src = "down.svg"
     }
     else {
         musicmenu.style.top = "150%"
-        arrowthing.src = "/stuff/icons/up.svg"
+        arrowthing.src = "up.svg"
     }
 }
 function leavethefunctionasfrogiesarcade() {
